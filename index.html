@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EVE</title>
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      },
+      svg: {
+        fontCache: 'global'
+      }
+    };
+  </script>
+  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro">
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="static/images/favicon.ico" type="image/x-icon">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">
+            <img src="static/images/EVE_logo.png" alt="EVE logo" width="50">
+            EVE: Enabling Anyone to Train Robots using Augmented Reality
+          </h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://junwang0510.github.io/">Jun Wang</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.linkedin.com/in/chun-cheng-chang-28b49a223/">Chun-Cheng Chang</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://duanjiafei.com/">Jiafei Duan</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://homes.cs.washington.edu/~fox/">Dieter Fox</a>,
+            </span>
+            <span class="author-block">
+              <a href="https://www.ranjaykrishna.com/index.html">Ranjay Krishna</a>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block" style="color: purple;">University of Washington</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            The increasing affordability of robot hardware is accelerating the integration of robots into everyday activities. However, training a robot to automate a task typically requires physical robots and expensive demonstration data from trained human annotators. Consequently, only those with access to physical robots produce demonstrations to train robots.
+          </p>
+          <p>
+            To address this issue, we introduce EVE, an iOS app that enables everyday users to train robots using intuitive augmented reality visualizations without needing a physical robot. With EVE, users can collect demonstrations by specifying waypoints with their hands, visually inspecting the environment for obstacles, modifying existing waypoints, and verifying collected trajectories.
+          </p>
+          <p>
+            In a user study ($N=14$, $D=30$) consisting of three common tabletop tasks, EVE outperformed three state-of-the-art interfaces in success rate and was comparable to kinesthetic teaching—physically moving a real robot—in completion time, usability, motion intent communication, enjoyment, and preference ($mean_{p}=0.30$). EVE allows users to train robots for personalized tasks, such as sorting desk supplies, organizing ingredients, or setting up board games. We conclude by enumerating limitations and design considerations for future AR-based demonstration collection systems for robotics.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <p>
+        Website template borrowed from <a href="https://github.com/nerfies/nerfies.github.io">NeRFies</a>.
+      </p>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
