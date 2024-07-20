@@ -2,7 +2,6 @@ body {
   font-family: 'Noto Sans', sans-serif;
 }
 
-
 .footer .icon-link {
     font-size: 25px;
     color: #000;
@@ -44,9 +43,6 @@ body {
   object-fit: fit;
 }
 
-.publication-header .hero-body {
-}
-
 .publication-title {
     font-family: 'Google Sans', sans-serif;
 }
@@ -67,9 +63,6 @@ body {
     font-weight: bolder;
 }
 
-.publication-authors {
-}
-
 .publication-authors a {
    color: hsl(204, 86%, 53%) !important;
 }
@@ -78,15 +71,38 @@ body {
     text-decoration: underline;
 }
 
-.author-block {
-  display: inline-block;
-}
-
-.publication-banner img {
-}
-
 .publication-authors {
-  /*color: #4286f4;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+.author-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.author-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.author-images {
+  display: flex;
+  gap: 60px;
+}
+
+.affiliation-block {
+  font-size: 16px;
+  color: #555;
+  margin-left: 10px;
 }
 
 .publication-video {
@@ -154,4 +170,13 @@ body {
 }
 #interpolation-image-wrapper img {
   border-radius: 5px;
+}
+
+.video-title {
+  background-color: black;
+  color: white;
+  padding: 0px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
 }
