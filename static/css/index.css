@@ -22,10 +22,15 @@ body {
   padding-bottom: 3rem;
 }
 
+.teaser .hero-body img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .teaser {
   font-family: 'Google Sans', sans-serif;
 }
-
 
 .publication-title {
 }
@@ -123,15 +128,13 @@ body {
     height: 100%;
 }
 
-.publication-body img {
-}
-
 .results-carousel {
   overflow: hidden;
 }
 
 .results-carousel .item {
-  margin: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
   overflow: hidden;
   border: 1px solid #bbb;
   border-radius: 10px;
@@ -152,9 +155,6 @@ body {
 .interpolation-panel .interpolation-image {
   width: 100%;
   border-radius: 5px;
-}
-
-.interpolation-video-column {
 }
 
 .interpolation-panel .slider {
@@ -179,4 +179,11 @@ body {
   text-align: center;
   font-size: 18px;
   font-weight: bold;
+}
+
+.task-image {
+  height: 333px;
+  width: auto;
+  object-fit: cover;
+  border-radius: 5px;
 }
