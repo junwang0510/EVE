@@ -74,13 +74,8 @@ function updateTaskMedia() {
   var selectedTask = document.getElementById("task-select").value;
   var taskImage = document.getElementById("task-image");
   var taskVideo1 = document.getElementById("task-video1");
-  // var taskVideo2 = document.getElementById("task-video2");
-
   taskImage.src = "static/images/" + selectedTask + ".jpg";
   taskImage.alt = selectedTask.replace(/_/g, ' ');
-
-  taskVideo1.src = "static/videos/" + selectedTask + "1.mp4";
-  // taskVideo2.src = "static/videos/" + selectedTask + "2.mp4";
+  taskVideo1.src = "static/videos/" + selectedTask + ".mp4";
   taskVideo1.load();
-  // taskVideo2.load();
 }
