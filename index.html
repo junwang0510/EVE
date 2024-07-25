@@ -437,9 +437,58 @@
   </div>
 </section>
 
-<!-- Policy Rollout -->
+<!-- Policy Evaluation -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Policy Evaluation: AR2-D2 vs. EVE</h2>
+        <div class="content has-text-justified">
+          <p>
+            To assess the effectiveness of the collected demonstrations, we trained robot policies for the toggle switch task using data gathered by AR2-D2 and EVE. Like AR2-D2, EVE collects RGB-D data and waypoint coordinates during the data collection process. After collecting the data, we used <a href="https://peract.github.io/">Perceiver-Actor (PerAct)</a> to train a transformer-based language-guided behavior cloning policy. PerAct takes a 3D voxel observation and a language goal $(v, l)$ as inputs and produces discretized outputs for the translation, rotation, and gripper state of the end-effector. These outputs, in conjunction with a motion planner, enable the execution of tasks specified by the language goal. We trained the policy using $6$ demonstrations over $30,000$ iterations for each interface.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-<!-- Policy Evaluation: AR2-D2 vs. EVE -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-three-quarters has-text-centered">
+        <div class="content">
+          <div class="columns is-multiline is-centered">
+            <div class="column is-half">
+              <div class="video-title">AR2-D2 Train</div>
+              <video controls class="task-video">
+                <source src="./static/videos/train_ar2d2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column is-half">
+              <div class="video-title">AR2-D2 Rollout</div>
+              <video controls class="task-video">
+                <source src="./static/videos/rollout_ar2d2.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column is-half">
+              <div class="video-title">EVE Train</div>
+              <video controls class="task-video">
+                <source src="./static/videos/train_eve.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div class="column is-half">
+              <div class="video-title">EVE Rollout</div>
+              <video controls class="task-video">
+                <source src="./static/videos/rollout_eve.mp4" type="video/mp4">
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- bibtex -->
 <section class="section" id="BibTeX">
