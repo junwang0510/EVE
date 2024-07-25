@@ -451,6 +451,9 @@
           <p>
             To assess the effectiveness of the collected demonstrations, we trained robot policies for the toggle switch task using data gathered by AR2-D2 and EVE. Like AR2-D2, EVE collects RGB-D data and waypoint coordinates during the data collection process. After collecting the data, we used <a href="https://peract.github.io/">Perceiver-Actor (PerAct)</a> to train a transformer-based language-guided behavior cloning policy. PerAct takes a 3D voxel observation and a language goal $(v, l)$ as inputs and produces discretized outputs for the translation, rotation, and gripper state of the end-effector. These outputs, in conjunction with a motion planner, enable the execution of tasks specified by the language goal. We trained the policy using $6$ demonstrations over $30,000$ iterations for each interface.
           </p>
+          <p>
+            The trained policies were evaluated with $30$ task rollouts for the toggle switch task. The policy trained with EVE-collected data achieved a $30%$ success rate, compared to a $20%$ success rate with AR2-D2-collected data. We emphasize that the toggle switch task is more challenging than the button press task from the AR2-D2 paper, as it requires millimeter-level precision for the robot's end-effector to touch a specific point on the switch to turn on a light bulb. The higher success rate with EVE-collected data may be attributed to the improved depth perception during collection, allowing users to adjust waypoints for more accurate trajectories.
+          </p>
         </div>
       </div>
     </div>
