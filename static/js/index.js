@@ -58,13 +58,6 @@ $(document).ready(function() {
     	});
     }
 
-    /*var player = document.getElementById('interpolation-video');
-    player.addEventListener('loadedmetadata', function() {
-      $('#interpolation-slider').on('input', function(event) {
-        console.log(this.value, player.duration);
-        player.currentTime = player.duration / 100 * this.value;
-      })
-    }, false);*/
     preloadInterpolationImages();
 
     $('#interpolation-slider').on('input', function(event) {
@@ -81,13 +74,13 @@ function updateTaskMedia() {
   var selectedTask = document.getElementById("task-select").value;
   var taskImage = document.getElementById("task-image");
   var taskVideo1 = document.getElementById("task-video1");
-  var taskVideo2 = document.getElementById("task-video2");
+  // var taskVideo2 = document.getElementById("task-video2");
 
   taskImage.src = "static/images/" + selectedTask + ".jpg";
   taskImage.alt = selectedTask.replace(/_/g, ' ');
 
   taskVideo1.src = "static/videos/" + selectedTask + "1.mp4";
-  taskVideo2.src = "static/videos/" + selectedTask + "2.mp4";
-  taskVideo1.load();  // Reload the first video
-  taskVideo2.load();  // Reload the second video
+  // taskVideo2.src = "static/videos/" + selectedTask + "2.mp4";
+  taskVideo1.load();
+  // taskVideo2.load();
 }

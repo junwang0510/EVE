@@ -153,19 +153,19 @@
 </section>
 
 <!-- Teaser -->
-<section class="hero teaser">
+<!-- <section class="hero teaser">
   <div class="container is-max-desktop">
-    <div class="hero-body">
+    <div class="hero-body"> -->
       <!-- <video id="teaser" autoplay muted loop playsinline height="100%">
         <source src="./static/videos/teaser.mp4"
                 type="video/mp4">
       </video> -->
-      <h2 class="subtitle has-text-centered">
+      <!-- <h2 class="subtitle has-text-centered">
         <i class="fas fa-mobile-alt"></i>&nbsp;EVE is an <strong>iOS app</strong> that enables <strong>everyday users</strong> to train robots using<br>intuitive <strong>augmented reality visualizations</strong> without needing a real robot.
       </h2>
     </div>
   </div>
-</section>
+</section> -->
 
 <!-- Abstract -->
 <section class="section">
@@ -211,6 +211,24 @@
     <div class="container">
       <div id="results-carousel" class="carousel results-carousel">
         <div class="item item-arkt">
+          <div class="video-title">Kinesthetic Teaching</div>
+          <video poster="" id="kt" autoplay controls muted loop playsinline>
+            <source src="./static/videos/kt.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-arkt">
+          <div class="video-title">Teleoperation</div>
+          <video poster="" id="teleop" autoplay controls muted loop playsinline>
+            <source src="./static/videos/teleop.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-arkt">
+          <div class="video-title">AR2-D2</div>
+          <video poster="" id="ar2d2" autoplay controls muted loop playsinline>
+            <source src="./static/videos/ar2d2.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-arkt">
           <div class="video-title">AR Kinesthetic Teaching</div>
           <video poster="" id="arkt" autoplay controls muted loop playsinline>
             <source src="./static/videos/arkt.mp4" type="video/mp4">
@@ -218,20 +236,14 @@
         </div>
         <div class="item item-path">
           <div class="video-title">Path History</div>
-          <video poster="" id="arkt" autoplay controls muted loop playsinline>
+          <video poster="" id="path" autoplay controls muted loop playsinline>
             <source src="./static/videos/path_history.mp4" type="video/mp4">
           </video>
         </div>
         <div class="item item-invbot">
           <div class="video-title">Invisible Robot</div>
-          <video poster="" id="arkt" autoplay controls muted loop playsinline>
+          <video poster="" id="invbot" autoplay controls muted loop playsinline>
             <source src="./static/videos/invisible_robot.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-arkt">
-          <div class="video-title">AR Kinesthetic Teaching</div>
-          <video poster="" id="arkt" autoplay controls muted loop playsinline>
-            <source src="./static/videos/arkt.mp4" type="video/mp4">
           </video>
         </div>
       </div>
@@ -264,6 +276,36 @@
       <h2 class="subtitle has-text-centered">
         The mean and standard deviation of usability (SUS: 1-100), motion intent communication (ranking: 1-4), user enjoyment (ranking: 1-4), and user preference (ranking: 1-4) are provided. Statistical significance is indicated by $\:\hat{}\:$ for $p \lt 0.05$.
       </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Evaluation Study -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Evaluation Study</h2>
+        <div class="content has-text-justified">
+          <p>
+            Informed by formative study findings and our own experiences using EVE, we upgraded EVE's prototype with seven additional system changes to address the usability challenges.
+          </p>
+          <p>
+            We conducted a user study to evaluate the effectiveness of EVE compared to baseline interfaces for three common tabletop tasks. These tasks were designed based on the survey from <a href="https://behavior.stanford.edu/behavior-1k">BEHAVIOR-1K</a> asking participants, "What do you want robots to do for you?" We included obstacles in all tasks to simulate real-world environments where tables are often cluttered.
+          </p>
+          <ul>
+            <li>
+              Toggle switch: Participants guided the robot to push a switch, turning on a light bulb. This task is more challenging than the button press task from the AR2- D2 paper, as it requires millimeter-level precision for the robot’s end-effector to touch a specific point on the switch.
+            </li>
+            <li>
+              Sort food: Participants controlled the robot to grab a melon and place it inside a yellow bowl, then pick up a steak and put it into a basket. This task simulated sorting different items into specific locations.
+            </li>
+            <li>
+              Sweep table: Participants directed the robot to sweep beans to a location marked by tape with a sponge. This task simulated cleaning debris from a table.
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -320,49 +362,7 @@
   </div>
 </section>
 
-<!-- Evaluation Study Tasks
-<section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column">
-        <img src="static/images/switch.jpg" alt="toggle switch" class="task-image">
-      </div>
-      <div class="column">
-        <img src="static/images/sort.jpg" alt="sort food" class="task-image">
-      </div>
-      <div class="column">
-        <img src="static/images/sweep.jpg" alt="sweep table" class="task-image">
-      </div>
-    </div>
-  </div>
-</section> -->
-
 <!-- Evaluation Study Tasks -->
-<!-- <section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-one-quarter has-text-centered">
-        <div class="select is-rounded">
-          <select id="task-select" onchange="updateTaskMedia()">
-            <option value="switch">Toggle Switch</option>
-            <option value="sort">Sort Food</option>
-            <option value="sweep">Sweep Table</option>
-          </select>
-        </div>
-        <video id="task-video1" controls class="task-video">
-          <source src="static/videos/switch1.mp4" type="video/mp4">
-        </video>
-        <video id="task-video2" controls class="task-video">
-          <source src="static/videos/switch2.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="column is-three-quarters has-text-centered">
-        <img id="task-image" src="static/images/switch.jpg" alt="Toggle Switch" class="task-image">
-      </div>
-    </div>
-  </div>
-</section> -->
-
 <section class="section">
   <div class="container">
     <div class="columns is-centered">
@@ -390,15 +390,28 @@
           <source src="static/videos/switch1.mp4" type="video/mp4">
         </video>
       </div>
-      <div class="column is-one-third has-text-centered">
+      <!-- <div class="column is-one-third has-text-centered">
         <video id="task-video2" controls class="task-video">
           <source src="static/videos/switch2.mp4" type="video/mp4">
         </video>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
 
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            Success rates and remaining time for each task were recorded for all interfaces. Upon completing the task collection with all interfaces, participants filled out the SUS survey and a form ranking motion intent communication, user enjoyment, and overall preference for the interfaces. We aimed to measure $10$ collection attempts for each task.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
 <!-- Evaluation Study Results -->
 <section class="hero teaser">
