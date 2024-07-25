@@ -74,8 +74,10 @@ function updateTaskMedia() {
   var selectedTask = document.getElementById("task-select").value;
   var taskImage = document.getElementById("task-image");
   var taskVideo1 = document.getElementById("task-video1");
-  taskImage.src = "static/images/" + selectedTask + ".jpg";
+
+  taskImage.src = "static/images/evaluation/" + selectedTask + ".png";
   taskImage.alt = selectedTask.replace(/_/g, ' ');
+
   taskVideo1.src = "static/videos/" + selectedTask + ".mp4";
   taskVideo1.load();
 }

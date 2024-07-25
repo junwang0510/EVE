@@ -212,7 +212,7 @@
   </div>
 </section>
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -224,17 +224,29 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
-<section class="hero teaser">
+<!-- Formative Study Results -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified" style="margin-top: 50px;">
+          <p>
+            Participants were given up to five minutes to try each interface by pushing, picking, and placing various cubes. We conducted a semi-structured interview about their experience, focusing on what features they liked and disliked about each interface. We also brainstormed additional features for the AR-based collection interface. Participants completed surveys and rankings for usability, motion intent communication, user enjoyment, and user preference.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/comments.png" alt="user comments">
-      <h2 class="subtitle has-text-centered">
+      <img src="static/images/formative/comments.png" alt="user comments" style="margin-bottom: 15px;">
+      <h2 class="subtitle has-text-justified small-caption">
         User comments about the six demonstration collection methods used in the formative study.
       </h2>
-      <img src="static/images/formative_results.png" alt="formative study results" width="70%">
-      <h2 class="subtitle has-text-centered">
+      <img src="static/images/formative/formative_results.png" alt="formative study results" width="70%">
+      <h2 class="subtitle has-text-justified small-caption">
         The mean and standard deviation of usability (SUS: 1-100), motion intent communication (ranking: 1-4), user enjoyment (ranking: 1-4), and user preference (ranking: 1-4) are provided. Statistical significance is indicated by $\:\hat{}\:$ for $p \lt 0.05$.
       </h2>
     </div>
@@ -251,20 +263,6 @@
           <p>
             Informed by formative study findings and our own experiences using EVE, we upgraded EVE's prototype with seven additional system changes to address the usability challenges.
           </p>
-          <p>
-            We conducted a user study to evaluate the effectiveness of EVE compared to baseline interfaces for three common tabletop tasks. These tasks were designed based on the survey from <a href="https://behavior.stanford.edu/behavior-1k">BEHAVIOR-1K</a> asking participants, "What do you want robots to do for you?" We included obstacles in all tasks to simulate real-world environments where tables are often cluttered.
-          </p>
-          <ul>
-            <li>
-              Toggle switch: Participants guided the robot to push a switch, turning on a light bulb. This task is more challenging than the button press task from the AR2- D2 paper, as it requires millimeter-level precision for the robot's end-effector to touch a specific point on the switch.
-            </li>
-            <li>
-              Sort food: Participants controlled the robot to grab a melon and place it inside a yellow bowl, then pick up a steak and put it into a basket. This task simulated sorting different items into specific locations.
-            </li>
-            <li>
-              Sweep table: Participants directed the robot to sweep beans to a location marked by tape with a sponge. This task simulated cleaning debris from a table.
-            </li>
-          </ul>
         </div>
       </div>
     </div>
@@ -323,28 +321,46 @@
   </div>
 </section>
 
-<!-- Evaluation Study Tasks -->
+<!-- Evaluation Study Tasks & Results-->
 <section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-half has-text-centered">
-        <div class="select is-rounded">
-          <select id="task-select" onchange="updateTaskMedia()">
-            <option value="switch">Toggle Switch</option>
-            <option value="sort">Sort Food</option>
-            <option value="sweep">Sweep Table</option>
-          </select>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <div class="content has-text-justified">
+          <p>
+            We conducted a user study to evaluate the effectiveness of EVE compared to baseline interfaces for three common tabletop tasks. These tasks were designed based on the survey from <a href="https://behavior.stanford.edu/behavior-1k">BEHAVIOR-1K</a>. We included obstacles in all tasks to simulate real-world environments.
+          </p>
+          <ul>
+            <li>
+              Toggle switch: Participants guided the robot to push a switch, turning on a light bulb. This task is more challenging than the button press task from the <a href="https://arxiv.org/abs/2306.13818">AR2-D2</a> paper, as it requires millimeter-level precision for the robot's end-effector to touch a specific point on the switch.
+            </li>
+            <li>
+              Sort food: Participants controlled the robot to grab a melon and place it inside a yellow bowl, then pick up a steak and put it into a basket. This task simulated sorting different items into specific locations.
+            </li>
+            <li>
+              Sweep table: Participants directed the robot to sweep beans to a location marked by tape with a sponge. This task simulated cleaning debris from a table.
+            </li>
+          </ul>
         </div>
       </div>
     </div>
   </div>
-</section>
-
-<section class="section">
+  <div class="container">
+    <div class="columns is-centered" style="margin-top: 30px;">
+      <div class="column is-half has-text-centered">
+        <div class="select is-rounded">
+          <select id="task-select" onchange="updateTaskMedia()">
+            <option value="switch">🔌 Toggle Switch</option>
+            <option value="sort">🧺 Sort Food</option>
+            <option value="sweep">🧽 Sweep Table</option>
+          </select>
+        </div>
+    </div>
+  </div>
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-one-third has-text-centered">
-        <img id="task-image" src="static/images/switch.jpg" alt="Toggle Switch" class="task-image">
+        <img id="task-image" src="static/images/evaluation/switch.png" alt="Toggle Switch" class="task-image">
       </div>
       <div class="column is-one-third has-text-centered">
         <video id="task-video1" controls class="task-video" autoplay controls muted loop playsinline>
@@ -352,11 +368,7 @@
         </video>
       </div>
     </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container is-max-desktop">
+  </div><div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
@@ -367,42 +379,38 @@
       </div>
     </div>
   </div>
-</section>
-
-<!-- Evaluation Study Results -->
-<section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
       <div class="columns is-centered">
         <div class="column is-half">
-          <img src="static/images/success.png" alt="success rate">
-          <h2 class="subtitle has-text-justified">
+          <img src="static/images/evaluation/success.png" alt="success rate">
+          <h2 class="subtitle has-text-justified small-caption">
             The mean task success rate (%) for all interfaces in the evaluation user study, which included three tasks with $10$ trials each, indicates that EVE achieved the highest success rate across all tasks.
           </h2>
         </div>
         <div class="column is-half">
-          <img src="static/images/time.png" alt="remaining time">
-          <h2 class="subtitle has-text-justified">
+          <img src="static/images/evaluation/time.png" alt="remaining time">
+          <h2 class="subtitle has-text-justified small-caption">
             The mean and the standard deviation of the remaining time (sec) for completing one demonstration for each task. EVE performed comparably to kinesthetic teaching, with an average difference of $5.1$ seconds across all tasks.
           </h2>
         </div>
       </div>
-      <div class="columns is-centered">
+      <div class="columns is-centered" style="margin-top: 30px;">
         <div class="column is-half">
-          <img src="static/images/eval_1.png" alt="eval_1">
+          <img src="static/images/evaluation/eval_1.png" alt="eval_1">
         </div>
         <div class="column is-half">
-          <img src="static/images/eval_2.png" alt="eval_2">
+          <img src="static/images/evaluation/eval_2.png" alt="eval_2">
         </div>
       </div>
-      <h2 class="subtitle has-text-justified">
+      <h2 class="subtitle has-text-justified small-caption">
         EVE performed comparably to kinesthetic teaching in usability, motion intent communication, user enjoyment, and user preference. The mean and standard deviation of all measurements are shown. Usability is rated on a scale from 0-100, with higher scores indicating better usability. Motion intent communication, user enjoyment, and user preference are ranked from 1-4, with lower ranks indicating better performance. Statistical significance is indicated by $*$ for $p \lt 0.05$ compared to EVE.
       </h2>
     </div>
   </div>
 </section>
 
-<!-- Policy Evaluation -->
+<!-- Policy Evaluation: AR2-D2 vs. EVE -->
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -471,7 +479,7 @@
   </div>
 </section> -->
 
-<!-- credits -->
+<!-- Credits -->
 <footer class="footer">
   <div class="container">
     <div class="content has-text-centered">

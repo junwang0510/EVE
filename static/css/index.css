@@ -199,3 +199,11 @@ body {
   border: 1px solid #bbb;
   margin-bottom: 20px;
 }
+
+#task-select {
+  margin-bottom: 0px;
+}
+
+.small-caption {
+  font-size: 1rem;
+}
