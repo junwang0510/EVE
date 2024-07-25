@@ -18,7 +18,7 @@ body {
 
 
 .teaser .hero-body {
-  padding-top: 0;
+  padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
@@ -30,6 +30,11 @@ body {
 
 .teaser {
   font-family: 'Google Sans', sans-serif;
+}
+
+.teaser .hero-body .subtitle{
+  font-size: 17px;
+  text-align: left;
 }
 
 .publication-title {
@@ -133,17 +138,20 @@ body {
 }
 
 .results-carousel .item {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
   overflow: hidden;
-  border: 1px solid #bbb;
-  border-radius: 10px;
+  border: 15px solid black;
+  border-radius: 12px;
   padding: 0;
   font-size: 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .results-carousel video {
   margin: 0;
+  padding: 0;
+  display: block;
 }
 
 
@@ -182,8 +190,17 @@ body {
 }
 
 .task-image {
-  height: 333px;
-  width: auto;
-  object-fit: cover;
+  width: 100%;
+  height: auto;
   border-radius: 5px;
+  border: 1px solid #bbb;
+  margin-bottom: 20px;
+}
+
+.task-video {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  border: 1px solid #bbb;
+  margin-bottom: 20px;
 }
