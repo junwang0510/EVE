@@ -192,18 +192,10 @@ body {
   margin-bottom: 20px;
 }
 
-/* .task-video {
+.task-video {
   width: 100%;
   height: auto;
   border-radius: 5px;
   border: 1px solid #bbb;
   margin-bottom: 20px;
-} */
-.task-video {
-  width: 110%;
-  height: auto;
-  border-radius: 5px;
-  border: 1px solid #bbb;
-  margin-bottom: 20px;
 }
-
