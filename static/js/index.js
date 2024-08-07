@@ -81,3 +81,10 @@ function updateTaskMedia() {
   taskVideo1.src = "static/videos/" + selectedTask + ".mp4";
   taskVideo1.load();
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  const links = document.querySelectorAll('a');
+  links.forEach(link => {
+    link.setAttribute('target', '_blank');
+  });
+});

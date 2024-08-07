@@ -91,9 +91,28 @@
 
           <div class="column has-text-centered">
             <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/pdf/2404.06089"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2404.06089"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
               <!-- Video Link. -->
               <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=U6-xrNNHX2g"
+                <a href="https://youtu.be/8f5J8AVTxLM"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="fab fa-youtube"></i>
@@ -115,6 +134,19 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Teaser -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <h2 class="subtitle has-text-centered">
+      <i class="fas fa-mobile-alt"></i>&nbsp;EVE is an <strong>iOS app</strong> that enables <strong>everyday users</strong> to train robots using<br>intuitive <strong>augmented reality visualizations</strong>, without needing a real robot.
+    </h2>
+      <video id="teaser" autoplay muted loop playsinline height="100%" style="margin-bottom: 50px;">
+        <source src="./static/videos/teaser.mp4"
+                type="video/mp4">
+      </video>
   </div>
 </section>
 
@@ -148,7 +180,7 @@
         <h2 class="title is-3">Formative User Study</h2>
         <div class="content has-text-justified">
           <p>
-            To understand the opportunities and challenges of AR-based trajectory collection, we conduct a formative study with $10$ participants with varying experience in robotics, using state-of-the-art collection interfaces (kinesthetic teaching, teleoperation with a VR controller, <a href="https://arxiv.org/abs/2306.13818">AR2-D2</a>) and new AR visualizations (AR Kinesthetic Teaching, Path History, Invisible Robot).
+            To understand the opportunities and challenges of trajectory collection, we conducted a formative study with $10$ participants with varying experience in robotics, using state-of-the-art collection interfaces (kinesthetic teaching, teleoperation with a VR controller, <a href="https://arxiv.org/abs/2306.13818">AR2-D2</a>) and the initial prototype of EVE with three different AR visualizations (AR Kinesthetic Teaching, Path History, Invisible Robot).
           </p>
         </div>
       </div>
@@ -156,7 +188,6 @@
   </div>
 </section>
 
-<!-- Formative Study Interfaces -->
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
@@ -200,21 +231,6 @@
       </div>
     </div>
   </div>
-</section>
-
-<!-- Formative Study Results -->
-<section class="section">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <div class="content has-text-justified" style="margin-top: 50px;">
-          <p>
-            Participants were given up to five minutes to try each interface by pushing, picking, and placing various cubes. We conducted a semi-structured interview about their experience, focusing on what features they liked and disliked about each interface. We also brainstormed additional features for the AR-based collection interface. Participants completed surveys and rankings for usability, motion intent communication, user enjoyment, and user preference.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="container is-max-desktop">
     <div class="hero-body has-text-centered">
       <img src="static/images/formative/comments.png" alt="user comments" style="margin-bottom: 15px;">
@@ -222,12 +238,12 @@
         User comments about the six demonstration collection methods used in the formative study.
       </h2>
       <img src="static/images/formative/formative_results.png" alt="formative study results" width="70%">
-      <h2 class="subtitle has-text-justified small-caption">
+      <h2 class="subtitle has-text-justified small-caption" style="margin-bottom: 25px;">
         The mean and standard deviation of usability (SUS: 1-100), motion intent communication (ranking: 1-4), user enjoyment (ranking: 1-4), and user preference (ranking: 1-4) are provided. Statistical significance is indicated by $\:\hat{}\:$ for $p \lt 0.05$.
       </h2>
     </div>
   </div>
-  <div class="container is-max-desktop">
+  <div class="container is-max-desktop" style="margin-bottom: 50px;">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
@@ -236,22 +252,22 @@
           </p>
           <ol>
             <li>
-              <strong>Ambiguous spatial position of the hand and the robot:</strong> Four participants expressed difficulty interpreting the 3D environment via a 2D iPad screen. The lack of depth perception made it challenging for users to accurately gauge the relative positions of their hands and the AR robot. This ambiguity led to inaccuracies in the collected demonstrations. A participant also complained about the hand passing through the robot, resulting in an unnatural collection.
+              <strong>Ambiguous spatial position of the hand and the robot:</strong> The lack of depth perception made it challenging for users to accurately gauge the relative positions of their hands and the AR robot.
             </li>
             <li>
-              <strong>Lack of knowledge of joint constraints:</strong> Five participants reported a lack of information about the joint limits. This problem, coupled with the lack of depth perception via the iPad screen, causes the robot to move unexpectedly when the specified point with the hand is out of the joint limit.
+              <strong>Lack of knowledge of joint constraints:</strong> A lack of information about the joint limits, coupled with the lack of depth perception via the iPad screen, causes the robot to move unexpectedly when the specified point with the hand is out of the joint limit.
             </li>
             <li>
-              <strong>Imprecise trajectory visualization:</strong>The path history visualization displays a straight green line between the robot's end effector coordinate and the user's hand coordinate. Although three participants stated that the trajectory visualization aids their understanding of the robot's motion intent, three other participants have proposed to include a more accurate trajectory.
+              <strong>Imprecise trajectory visualization:</strong> The path history visualization displays a straight green line between the robot's end effector coordinate and the user's hand coordinate.
             </li>
             <li>
-              <strong>Absence of feedback regarding the collection efficacy:</strong> Five participants complained about the lack of collision detection, which prevented them from verifying whether the collected trajectory was feasible. A participant claimed that while AR is "useful and fun," it does not make sense for the AR robot to pass through all the obstacles.
+              <strong>Absence of feedback regarding the collection efficacy:</strong> The lack of collision detection prevented the participants from verifying whether the collected trajectory was feasible.
             </li>
             <li>
-              <strong>Obstructive robot design:</strong> The AR robot's 1:1 scale correspondence with the physical Franka Panda robot frequently resulted in the occlusion of relevant objects within the scene. Four participants reported that the AR robot's size significantly impeded the data collection. Specifically, a participant expressed frustration regarding the robot's obstruction of the line, while another participant noted that the robot's presence obscured a substantial portion of the iPad's display.
+              <strong>Obstructive robot design:</strong> The AR robot's 1:1 scale correspondence with the physical Franka Panda robot frequently resulted in the occlusion of relevant objects within the scene.
             </li>
             <li>
-              <strong>Inconsistent hand tracking:</strong> Inconsistencies in hand tracking emerged as a significant concern among participants. Five individuals highlighted the presence of inaccuracies and latency in the hand tracking system employed in the AR environment. Furthermore, a participant noted that the gray line renderer, utilized in AR2-D2 to visualize the tracked coordinates of the user's fingers, is visually distracting.
+              <strong>Inconsistent hand tracking:</strong> Inaccuracies and latency in the hand tracking system employed in the AR environment.
             </li>
           </ol>
         </div>
@@ -335,21 +351,7 @@
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
           <p>
-            We conducted a user study to evaluate the effectiveness of EVE compared to baseline interfaces for three common tabletop tasks. These tasks were designed based on the survey from <a href="https://behavior.stanford.edu/behavior-1k">BEHAVIOR-1K</a>. We included obstacles in all tasks to simulate real-world environments.
-          </p>
-          <ul>
-            <li>
-              Toggle switch: Participants guided the robot to push a switch, turning on a light bulb. This task is more challenging than the button press task from the <a href="https://arxiv.org/abs/2306.13818">AR2-D2</a> paper, as it requires millimeter-level precision for the robot's end-effector to touch a specific point on the switch.
-            </li>
-            <li>
-              Sort food: Participants controlled the robot to grab a melon and place it inside a yellow bowl, then pick up a steak and put it into a basket. This task simulated sorting different items into specific locations.
-            </li>
-            <li>
-              Sweep table: Participants directed the robot to sweep beans to a location marked by tape with a sponge. This task simulated cleaning debris from a table.
-            </li>
-          </ul>
-          <p>
-            We include the task setups and the real-world policy evaluation using data collected with EVE below.
+            We conducted a user study to evaluate the effectiveness of EVE compared to baseline interfaces for three common tabletop tasks. We include the task setups and the real-world policy evaluation using data collected with EVE below.
           </p>
         </div>
       </div>
@@ -378,7 +380,7 @@
         </video>
       </div>
     </div>
-  </div><div class="container is-max-desktop">
+  </div><div class="container is-max-desktop" style="margin-top: 30px;">
     <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
@@ -428,10 +430,7 @@
         <h2 class="title is-3">Policy Evaluation: AR2-D2 vs. EVE</h2>
         <div class="content has-text-justified">
           <p>
-            To assess the effectiveness of the collected demonstrations, we trained robot policies for the toggle switch task using data gathered by AR2-D2 and EVE. Like AR2-D2, EVE collects RGB-D data and waypoint coordinates during the data collection process. After collecting the data, we used <a href="https://peract.github.io/">Perceiver-Actor (PerAct)</a> to train a transformer-based language-guided behavior cloning policy. PerAct takes a 3D voxel observation and a language goal $(v, l)$ as inputs and produces discretized outputs for the translation, rotation, and gripper state of the end-effector. These outputs, in conjunction with a motion planner, enable the execution of tasks specified by the language goal. We trained the policy using $6$ demonstrations over $30,000$ iterations for each interface.
-          </p>
-          <p>
-            The trained policies were evaluated with $30$ task rollouts for the toggle switch task. The policy trained with EVE-collected data achieved a $30%$ success rate, compared to a $20%$ success rate with AR2-D2-collected data. We emphasize that the toggle switch task is more challenging than the button press task from the AR2-D2 paper, as it requires millimeter-level precision for the robot's end-effector to touch a specific point on the switch to turn on a light bulb. The higher success rate with EVE-collected data may be attributed to the improved depth perception during collection, allowing users to adjust waypoints for more accurate trajectories.
+            We trained policies with <a href="https://peract.github.io/">Perceiver-Actor (PerAct)</a>, using $6$ demonstrations over $30,000$ iterations for each interface. On $30$ task rollouts for the toggle switch task, the policy trained with EVE-collected data achieved a $10$% higher accuracy compared to that trained with AR2-D2-collected data.
           </p>
         </div>
       </div>

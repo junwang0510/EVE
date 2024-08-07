@@ -207,3 +207,30 @@ body {
 .small-caption {
   font-size: 1rem;
 }
+
+.hero.is-light {
+  background-color: white;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.carousel .item {
+  background-color: white;
+}
+
+.hero-body .container {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.section {
+  padding-bottom: 1.5rem;
+}
+
+.section + .hero.is-light {
+  margin-top: -1.5rem;
+}
+
+.hero.is-light + .section {
+  margin-top: -1.5rem;
+}
